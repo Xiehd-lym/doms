@@ -1,6 +1,6 @@
 # doms
 宿舍管理系统02
-
+基于Mysql、SpringBoot
 毕业设计：主题“宿舍管理系统02”；
 项目代码已上传，数据库私聊：xiehdwork@163.com
 
