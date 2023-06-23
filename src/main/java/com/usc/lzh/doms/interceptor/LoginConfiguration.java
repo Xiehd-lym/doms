@@ -18,6 +18,10 @@ public class LoginConfiguration implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         // 拦截一切路径
         // 除了index、login和静态资源文件
-        registry.addInterceptor(loginInterceptor).addPathPatterns("/**").excludePathPatterns("/login.*").excludePathPatterns("/", "/index").excludePathPatterns("/layui/**", "/css/**", "/images/**", "/lib/**");
+        registry.addInterceptor(loginInterceptor)
+                .addPathPatterns("/**")
+                .excludePathPatterns("/login.*")
+                .excludePathPatterns("/", "/index")
+                .excludePathPatterns("/layui/**", "/css/**", "/images/**", "/lib/**");
     }
 }
